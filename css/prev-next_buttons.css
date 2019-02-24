@@ -1,0 +1,82 @@
+.prev-next {
+  /*text-align: center;*/
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+.prev-next::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.prev-next-link:hover {
+  display: inline-block;
+  text-decoration: none currentcolor solid;
+}
+.prev-link {
+  float: left;
+}
+.next-link {
+  float: right;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 40px;
+  background-color: #ac4142;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.next-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.next-button:hover span {
+  padding-right: 25px;
+}
+
+.next-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.prev-button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.prev-button:hover span {
+  padding-left: 25px;
+}
+
+.prev-button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.nohover:hover {
+}
