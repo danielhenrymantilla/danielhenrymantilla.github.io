@@ -1,0 +1,14 @@
+.inline-svg {
+  display: block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative;
+  float: right;
+  color: #a0a0a0;
+}
+
+.inline-svg::after {
+  clear: both;
+  content: "";
+}

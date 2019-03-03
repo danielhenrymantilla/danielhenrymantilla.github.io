@@ -152,9 +152,20 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
+  color: #004080; /*#30a030; #1e6e78;*/
   background-color: #f9f9f9;
   border-radius: 3px;
+  /*font-weight: bold;*/
+}
+.highlight pre {
+  border: none;
+  border-left: solid thin #c0c0c0;
+}
+.highlight table pre {
+  border: none;
+}
+a code {
+  text-decoration: underline;
 }
 pre {
   display: block;
